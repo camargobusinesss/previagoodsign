@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Goodsign Comunicação Visual</title>
+    <meta name="description" content="Goodsign Comunicação Visual: letras caixa, acrílico com LED, impressão digital, fachadas em ACM, banners, wind banner e adesivos. Orçamento pelo WhatsApp." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+         :root {
+            --orange: #F7931E;
+            --orange2: #FFB454;
+            --orange3: #FF7A18;
+            --ink: #0F172A;
+            --muted: #5B6475;
+            --line: rgba(15, 23, 42, .10);
+            --shadow: 0 22px 65px rgba(15, 23, 42, .12);
+            --shadow2: 0 14px 35px rgba(15, 23, 42, .10);
+            --shadowSoft: 0 22px 80px rgba(247, 147, 30, .22);
+            --r: 18px;
+            --r2: 26px;
+            --container: 1120px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+            color: var(--ink);
+            background: #fff;
+            line-height: 1.55;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        
+        .container {
+            width: min(var(--container), calc(100% - 32px));
+            margin: 0 auto;
+        }
+        /* HEADER */
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, .90);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+        }
+        
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            padding: 14px 0;
+        }
+        
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            min-width: 260px;
+        }
+        
+        .logoShell {
+            border-radius: 18px;
+            padding: 2px;
+            background: radial-gradient(140px 90px at 20% 20%, rgba(255, 180, 84, .95), transparent 70%), radial-gradient(160px 110px at 80% 70%, rgba(247, 147, 30, .72), transparent 72%), linear-gradient(135deg, rgba(247, 147, 30, .98), rgba(255, 122, 24, .92));
+            box-shadow: 0 16px 40px rgba(247, 147, 30, .22);
+        }
+        
+        .logoBox {
+            border-radius: 16px;
+            padding: 10px 14px;
+            background: rgba(255, 255, 255, .94);
+            border: 1px solid rgba(255, 255, 255, .70);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logoBox img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            filter: saturate(1.45) contrast(1.35) brightness(1.06) drop-shadow(0 12px 18px rgba(0, 0, 0, .18));
+        }
+        
+        .brandText {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.15;
+            gap: 2px;
+        }
+        
+        .brandText strong {
+            font-weight: 950;
+            font-size: 14px;
+            letter-spacing: -0.2px;
+        }
+        
+        .brandText span {
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(15, 23, 42, .70);
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        
+        nav a {
+            font-weight: 900;
+            font-size: 13px;
+            color: rgba(15, 23, 42, .72);
+            padding: 10px 0;
+            border-bottom: 2px solid transparent;
+        }
+        
+        nav a:hover {
+            color: var(--ink);
+            border-bottom-color: rgba(247, 147, 30, .55);
+        }
+        
+        .actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 16px;
+            border-radius: 999px;
+            font-weight: 950;
+            border: 1px solid var(--line);
+            background: #fff;
+            transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+            white-space: nowrap;
+        }
+        
+        .btn:hover {
+            transform: translateY(-1px);
+        }
+        
+        .btn-primary {
+            border: none;
+            color: #fff;
+            background: linear-gradient(180deg, var(--orange2), var(--orange));
+            box-shadow: 0 18px 38px rgba(247, 147, 30, .22);
+        }
+        
+        .btn-ghost:hover {
+            background: rgba(15, 23, 42, .04);
+        }
+        
+        .btn-onOrange {
+            background: rgba(255, 255, 255, .16);
+            border: 1px solid rgba(255, 255, 255, .24);
+            color: #fff;
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-onOrange:hover {
+            background: rgba(255, 255, 255, .22);
+        }
+        /* HERO */
+        
+        .heroWrap {
+            position: relative;
+            overflow: hidden;
+            padding: 62px 0 110px;
+            background: linear-gradient(180deg, rgba(247, 147, 30, .99), rgba(255, 122, 24, .98));
+        }
+        /* overlay mais forte pra destacar branco */
+        
+        .heroWrap:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(740px 420px at 12% 10%, rgba(255, 255, 255, .12), transparent 62%), radial-gradient(760px 460px at 90% 0%, rgba(255, 255, 255, .08), transparent 68%), radial-gradient(520px 520px at 70% 85%, rgba(0, 0, 0, .18), transparent 62%), linear-gradient(180deg, rgba(0, 0, 0, .16), rgba(0, 0, 0, .30));
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .heroGrid {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 18px;
+            align-items: stretch;
+        }
+        
+        .heroTitle {
+            color: #fff;
+            margin: 0 0 12px;
+            font-size: clamp(34px, 3.4vw, 50px);
+            line-height: 1.04;
+            letter-spacing: -0.9px;
+            font-weight: 950;
+            text-shadow: 0 18px 40px rgba(0, 0, 0, .35);
+        }
+        
+        .heroLead {
+            margin: 0;
+            color: rgba(255, 255, 255, .95);
+            font-weight: 650;
+            max-width: 72ch;
+            font-size: 15px;
+            text-shadow: 0 14px 26px rgba(0, 0, 0, .25);
+        }
+        
+        .heroBadges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .16);
+            border: 1px solid rgba(255, 255, 255, .24);
+            color: #fff;
+            font-weight: 900;
+            font-size: 12px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .heroActions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 22px;
+        }
+        /* HERO CARD */
+        
+        .heroCard {
+            background: rgba(255, 255, 255, .96);
+            border: 1px solid rgba(255, 255, 255, .70);
+            border-radius: var(--r2);
+            box-shadow: var(--shadowSoft);
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            /* subimos o card pra não “vazar” */
+            transform: translateY(-34px);
+        }
+        
+        .heroCardTop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 14px;
+            border-radius: 18px;
+            background: radial-gradient(280px 160px at 30% 30%, rgba(255, 180, 84, .50), transparent 68%), linear-gradient(180deg, rgba(247, 147, 30, .14), rgba(255, 255, 255, 1));
+            border: 1px solid rgba(15, 23, 42, .10);
+        }
+        
+        .heroCardTop img {
+            height: 76px;
+            width: auto;
+            object-fit: contain;
+            filter: saturate(1.70) contrast(1.50) brightness(1.08) drop-shadow(0 18px 24px rgba(0, 0, 0, .22));
+        }
+        
+        .heroCard p {
+            margin: 0;
+            color: rgba(15, 23, 42, .78);
+            font-weight: 650;
+            font-size: 14px;
+        }
+        
+        .meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .metaBox {
+            border: 1px solid rgba(15, 23, 42, .10);
+            border-radius: 16px;
+            padding: 12px;
+            background: #fff;
+            box-shadow: var(--shadow2);
+        }
+        
+        .metaBox .k {
+            font-size: 12px;
+            font-weight: 950;
+            color: rgba(15, 23, 42, .70);
+            margin-bottom: 4px;
+        }
+        
+        .metaBox .v {
+            font-weight: 950;
+            letter-spacing: -0.2px;
+        }
+        
+        .metaBox .s {
+            margin-top: 2px;
+            color: rgba(15, 23, 42, .60);
+            font-weight: 750;
+            font-size: 12px;
+        }
+        
+        .heroWave {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -2px;
+            height: 140px;
+            z-index: 1;
+            pointer-events: none;
+            background: radial-gradient(1200px 150px at 50% 0%, rgba(255, 255, 255, .90), rgba(255, 255, 255, 1) 70%), linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+        }
+        /* SECTION */
+        
+        .section {
+            padding: 74px 0;
+            background: #fff;
+        }
+        
+        .sectionHead {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 14px;
+            margin-bottom: 22px;
+        }
+        
+        .sectionHead h2 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 950;
+            letter-spacing: -0.6px;
+        }
+        
+        .sectionHead p {
+            margin: 0;
+            color: var(--muted);
+            font-weight: 650;
+            max-width: 74ch;
+        }
+        /* SERVICES */
+        
+        .grid3 {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 18px;
+        }
+        
+        .sCard {
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            padding: 18px;
+            background: #fff;
+            box-shadow: var(--shadow2);
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+        
+        .sCard:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 44px rgba(15, 23, 42, .12);
+        }
+        
+        .sIcon {
+            width: 44px;
+            height: 44px;
+            border-radius: 14px;
+            background: linear-gradient(180deg, rgba(247, 147, 30, .22), rgba(247, 147, 30, .08));
+            border: 1px solid rgba(247, 147, 30, .25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            box-shadow: 0 10px 24px rgba(247, 147, 30, .12);
+        }
+        
+        .sIcon svg {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: rgba(247, 147, 30, .95);
+            stroke-width: 2.2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        
+        .sCard h3 {
+            margin: 0 0 8px;
+            font-weight: 950;
+            font-size: 16px;
+            letter-spacing: -0.2px;
+        }
+        
+        .sCard p {
+            margin: 0;
+            color: var(--muted);
+            font-weight: 650;
+            font-size: 14px;
+        }
+        /* PORTFOLIO */
+        
+        .portfolioGrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-top: 18px;
+        }
+        
+        .portfolioItem {
+            position: relative;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 18px 46px rgba(15, 23, 42, .16);
+            border: 1px solid rgba(15, 23, 42, .08);
+        }
+        
+        .portfolioItem img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            transition: transform .45s ease;
+        }
+        
+        .portfolioItem:hover img {
+            transform: scale(1.06);
+        }
+        
+        .portfolioItem:after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, .55) 100%);
+        }
+        
+        .portfolioItem span {
+            position: absolute;
+            left: 14px;
+            right: 14px;
+            bottom: 14px;
+            z-index: 2;
+            color: #fff;
+            font-weight: 950;
+            font-size: 15px;
+            letter-spacing: -0.2px;
+            text-shadow: 0 12px 22px rgba(0, 0, 0, .32);
+        }
+        /* LOCATION */
+        
+        .mapWrap {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 14px;
+            align-items: stretch;
+            margin-top: 18px;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 360px;
+            border: 0;
+            border-radius: 22px;
+            border: 1px solid rgba(15, 23, 42, .10);
+            box-shadow: var(--shadow2);
+            background: #fff;
+        }
+        
+        .info {
+            border-radius: 22px;
+            border: 1px solid rgba(15, 23, 42, .10);
+            background: #fff;
+            box-shadow: var(--shadow);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .info strong {
+            font-weight: 950;
+            font-size: 18px;
+            letter-spacing: -0.2px;
+        }
+        
+        .info .line {
+            color: var(--muted);
+            font-weight: 650;
+        }
+        
+        .pillRow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 6px;
+        }
+        
+        .pill {
+            border: 1px solid rgba(247, 147, 30, .22);
+            background: rgba(247, 147, 30, .10);
+            padding: 8px 10px;
+            border-radius: 999px;
+            font-weight: 900;
+            font-size: 12px;
+            color: rgba(15, 23, 42, .80);
+        }
+        
+        footer {
+            padding: 28px 0 46px;
+            border-top: 1px solid rgba(15, 23, 42, .08);
+            color: rgba(15, 23, 42, .55);
+            font-weight: 700;
+            font-size: 13px;
+            text-align: center;
+        }
+        
+        .float {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            z-index: 60;
+            padding: 12px 14px;
+            border-radius: 999px;
+            background: linear-gradient(180deg, var(--orange2), var(--orange));
+            color: #fff;
+            font-weight: 950;
+            box-shadow: 0 16px 40px rgba(247, 147, 30, .22);
+            border: 1px solid rgba(255, 255, 255, .22);
+        }
+        
+        @media (max-width: 980px) {
+            nav {
+                display: none;
+            }
+            .heroGrid {
+                grid-template-columns: 1fr;
+            }
+            .grid3 {
+                grid-template-columns: 1fr;
+            }
+            .portfolioGrid {
+                grid-template-columns: 1fr;
+            }
+            .mapWrap {
+                grid-template-columns: 1fr;
+            }
+            .meta {
+                grid-template-columns: 1fr;
+            }
+            .heroWrap {
+                padding: 52px 0 95px;
+            }
+            .portfolioItem img {
+                height: 220px;
+            }
+            .heroCard {
+                transform: translateY(-16px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <a class="brand" href="#top" aria-label="Topo">
+                <div class="logoShell">
+                    <div class="logoBox">
+                        <img src="assets/logo.png" alt="Goodsign Comunicação Visual">
+                    </div>
+                </div>
+                <div class="brandText">
+                    <strong>Goodsign Comunicação Visual</strong>
+                    <span>Fachadas • Letras Caixa • Impressão • Adesivos</span>
+                </div>
+            </a>
+
+            <nav>
+                <a href="#servicos">Serviços</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#local">Localização</a>
+            </nav>
+
+            <div class="actions">
+                <a class="btn btn-ghost" href="tel:+5511987954833">Ligar</a>
+                <a class="btn btn-primary" href="https://wa.me/5511987954833?text=Olá!%20Vim%20pelo%20site%20da%20Goodsign%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noreferrer">Orçamento</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- HERO -->
+        <section class="heroWrap">
+            <div class="container heroGrid">
+                <div>
+                    <h1 class="heroTitle">Comunicação visual que valoriza sua marca.</h1>
+                    <p class="heroLead">
+                        Letras caixa, acrílico com ou sem LED, impressão digital, painéis em ACM, banners, wind banner e adesivos em geral. Atendimento direto e orçamento rápido.
+                    </p>
+
+                    <div class="heroBadges">
+                        <div class="badge">Seg á Sex • 08:00 às 17:00</div>
+                        <div class="badge">Orçamento rápido</div>
+                        <div class="badge">Projetos sob medida</div>
+                    </div>
+
+                    <div class="heroActions">
+                        <a class="btn btn-primary" href="https://wa.me/5511987954833?text=Olá!%20Quero%20um%20orçamento%20na%20Goodsign.%20Posso%20enviar%20as%20medidas%20e%20referências?" target="_blank" rel="noreferrer">Solicitar orçamento</a>
+                        <a class="btn btn-onOrange" href="#portfolio">Ver trabalhos</a>
+                    </div>
+                </div>
+
+                <div class="heroCard">
+                    <div class="heroCardTop">
+                        <img src="assets/logo.png" alt="Goodsign Comunicação Visual">
+                    </div>
+
+                    <p>
+                        Para agilizar o orçamento, envie uma foto do local e as medidas aproximadas. Se tiver referência do que deseja, ajuda ainda mais.
+                    </p>
+
+                    <div class="meta">
+                        <div class="metaBox">
+                            <div class="k">Endereço</div>
+                            <div class="v">R. Fábio Calabi, 117</div>
+                            <div class="s">Vila Capriotti</div>
+                        </div>
+                        <div class="metaBox">
+                            <div class="k">Telefone / WhatsApp</div>
+                            <div class="v">(11) 98795-4833</div>
+                            <div class="s">Seg á Sex • 08:00 às 17:00</div>
+                        </div>
+                    </div>
+
+                    <a class="btn btn-primary" href="https://wa.me/5511987954833?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noreferrer">
+          Chamar no WhatsApp
+        </a>
+                </div>
+            </div>
+            <div class="heroWave"></div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section" id="servicos">
+            <div class="container">
+                <div class="sectionHead">
+                    <div>
+                        <h2>Serviços</h2>
+                        <p>Produção sob medida com acabamento premium e instalação alinhada ao seu projeto.</p>
+                    </div>
+                </div>
+
+                <div class="grid3">
+                    <div class="sCard">
+                        <div class="sIcon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-4 12.7V18a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-3.3A7 7 0 0 0 12 2Z"/><path d="M10 22h4"/></svg>
+                        </div>
+                        <h3>Painel de Acrílico com LED</h3>
+                        <p>Iluminação uniforme, alto impacto e acabamento premium para ambientes e fachadas.</p>
+                    </div>
+
+                    <div class="sCard">
+                        <div class="sIcon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 4 20h3l1.6-3.5h6.8L17 20h3L12 4Z"/><path d="M9.7 13.8 12 8.7l2.3 5.1H9.7Z"/></svg>
+                        </div>
+                        <h3>Letra Caixa</h3>
+                        <p>Em PVC, galvanizado e acrílico — com ou sem LED, conforme o projeto.</p>
+                    </div>
+
+                    <div class="sCard">
+                        <div class="sIcon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V4h10v4"/><path d="M6 10h12a3 3 0 0 1 3 3v4h-4v3H7v-3H3v-4a3 3 0 0 1 3-3Z"/><path d="M8 17h8"/></svg>
+                        </div>
+                        <h3>Impressão Digital</h3>
+                        <p>Grande e pequeno formato para divulgar com nitidez e qualidade.</p>
+                    </div>
+
+                    <div class="sCard">
+                        <div class="sIcon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V6l8-3 8 3v14"/><path d="M9 20v-6h6v6"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg>
+                        </div>
+                        <h3>Fachadas em ACM</h3>
+                        <p>Painéis e revestimentos com visual moderno e acabamento alinhado.</p>
+                    </div>
+
+                    <div class="sCard">
+                        <div class="sIcon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v18"/><path d="M6 4h11l-2 4 2 4H6"/></svg>
+                        </div>
+                        <h3>Banners e Wind Banner</h3>
+                        <p>Materiais de divulgação para lojas, eventos, promoções e ações externas.</p>
+                    </div>
+
+                    <div class="sCard">
+                        <div class="sIcon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.5V12A9 9 0 1 0 12 21h.5"/><path d="M14 21a7 7 0 0 0 7-7h-5a2 2 0 0 0-2 2v5Z"/></svg>
+                        </div>
+                        <h3>Adesivos em geral</h3>
+                        <p>Vitrines, paredes, sinalização e aplicações sob medida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="section" id="portfolio">
+            <div class="container">
+                <div class="sectionHead">
+                    <div>
+                        <h2>Portfólio</h2>
+                        <p>Alguns trabalhos para você ver acabamento, presença e qualidade de instalação.</p>
+                    </div>
+                </div>
+
+                <div class="portfolioGrid">
+                    <div class="portfolioItem">
+                        <img src="assets/portfolio/acrilico-led.jpg" alt="Painel de Acrílico com LED">
+                        <span>Painel de Acrílico com LED</span>
+                    </div>
+                    <div class="portfolioItem">
+                        <img src="assets/portfolio/letra-caixa.jpg" alt="Letra Caixa">
+                        <span>Letra Caixa</span>
+                    </div>
+                    <div class="portfolioItem">
+                        <img src="assets/portfolio/logo-galvanizada.jpg" alt="Logo Galvanizada">
+                        <span>Logo Galvanizada</span>
+                    </div>
+                    <div class="portfolioItem">
+                        <img src="assets/portfolio/logo-pvc.jpg" alt="Logo em PVC Expandido">
+                        <span>Logo em PVC Expandido</span>
+                    </div>
+                    <div class="portfolioItem">
+                        <img src="assets/portfolio/luminoso-parede.jpg" alt="Luminoso de Parede">
+                        <span>Luminoso de Parede</span>
+                    </div>
+                    <div class="portfolioItem">
+                        <img src="assets/portfolio/fachada-acm.jpg" alt="Fachadas em ACM">
+                        <span>Fachadas em ACM</span>
+                    </div>
+                    <div class="portfolioItem">
+                        <img src="assets/portfolio/trofeus.jpg" alt="Troféus">
+                        <span>Troféus</span>
+                    </div>
+                    <div class="portfolioItem">
+                        <img src="assets/portfolio/wind-banner.jpg" alt="Wind Banner">
+                        <span>Wind Banner</span>
+                    </div>
+                    <div class="portfolioItem">
+                        <img src="assets/portfolio/logo-acrilico.jpg" alt="Logo em Acrílico">
+                        <span>Logo em Acrílico</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCATION -->
+        <section class="section" id="local">
+            <div class="container">
+                <div class="sectionHead">
+                    <div>
+                        <h2>Localização</h2>
+                        <p>Venha conversar ou envie as medidas/referências pelo WhatsApp.</p>
+                    </div>
+                </div>
+
+                <div class="mapWrap">
+                    <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=R.%20F%C3%A1bio%20Calabi,%20117%20-%20Vila%20Capriotti&output=embed">
+        </iframe>
+
+                    <div class="info">
+                        <strong>Goodsign Comunicação Visual</strong>
+                        <div class="line"><b>Endereço:</b> R. Fábio Calabi, 117 — Vila Capriotti</div>
+                        <div class="line"><b>Telefone/WhatsApp:</b> (11) 98795-4833</div>
+                        <div class="line"><b>Horário:</b> Seg á Sex • 08:00 às 17:00</div>
+
+                        <div class="pillRow">
+                            <div class="pill">Orçamento rápido</div>
+                            <div class="pill">Projetos sob medida</div>
+                            <div class="pill">Atendimento direto</div>
+                        </div>
+
+                        <a class="btn btn-primary" style="margin-top:6px" href="https://wa.me/5511987954833?text=Olá!%20Vim%20pelo%20site%20da%20Goodsign%20e%20gostaria%20de%20um%20orçamento." target="_blank" rel="noreferrer">
+            Solicitar orçamento no WhatsApp
+          </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                © <span id="year"></span> Goodsign Comunicação Visual — Todos os direitos reservados.
+            </div>
+        </footer>
+    </main>
+
+    <a class="float" href="https://wa.me/5511987954833?text=Olá!%20Quero%20um%20orçamento%20na%20Goodsign." target="_blank" rel="noreferrer">
+  WhatsApp
+</a>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
